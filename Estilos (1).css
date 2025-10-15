@@ -1,0 +1,74 @@
+/* Importar fuentes elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display&display=swap');
+
+/* Estilo general del cuerpo de la página */
+body {
+  background: linear-gradient(135deg, #f5f5f5, #dcdcdc, #ffffff, #c0c0c0); /* Degradado plateado brillante */
+  font-family: 'Playfair Display', serif;
+  color: #111; /* Letra negra elegante */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Contenedor central */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+
+  /* Borde dorado brillante */
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #fff8dc, #ffd700, #fff8dc, #ffcc00) 1;
+}
+
+/* Encabezado con estilo */
+h1 {
+  color: #111; /* Letra negra para elegancia */
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  font-family: 'Cinzel', serif;
+  text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.4); /* Sombra suave */
+}
+
+/* Estilo para los párrafos */
+p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #222; /* Texto oscuro pero legible */
+  font-family: 'Playfair Display', serif;
+}
+
+/* Estilo general para imágenes */
+img {
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #fff8dc, #ffd700, #fff8dc, #ffcc00) 1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Contenedor para las imágenes en fila */
+.image-row {
+  display: flex;
+  gap: 20px; /* Espacio entre imágenes */
+  justify-content: center;
+  flex-wrap: wrap; /* Que baje a otra línea si no cabe */
+  margin-top: 30px;
+}
+
+/* Ajustamos las imágenes dentro de .image-row para que tengan un tamaño fijo y no ocupen 100% */
+.image-row img {
+  max-width: 200px; /* Ajusta el tamaño según prefieras */
+  margin: 0; /* Quitamos margen vertical para evitar espacio extra */
+}
+
